@@ -14,9 +14,6 @@ jobs:
             username: adoloscofimeaco1@gmail.com
             password: Skyline2013@
       -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       -
@@ -24,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: mathribe:latest
+          tags: mathribe/git:latest
